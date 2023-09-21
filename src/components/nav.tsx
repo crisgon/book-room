@@ -19,7 +19,7 @@ export function Nav() {
     <Dialog open={open} onOpenChange={setOpen}>
       <nav className="w-[1000px] flex items-center py-8 space-x-4 m-auto">
         <DialogTrigger asChild>
-          <Button variant="outline">Criar reserva</Button>
+          <Button variant="default">Criar reserva</Button>
         </DialogTrigger>
         <Link
           href="/"

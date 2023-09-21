@@ -28,9 +28,8 @@ export default function List() {
   const [data, setData] = useState<Schedule[]>([]);
   const [idToDelete, setIdToDelete] = useState<number | null>(null);
   const rooms = {
-    "auditorio-1": "Auditório 1",
-    "auditorio-2": "Auditório 2",
-    "auditorio-3": "Auditório 3",
+    "auditorio-1": "Espaço Irmã Rosa",
+    "auditorio-2": "Espaço Irmã Filomena",
   };
 
   async function getData() {

@@ -17,6 +17,7 @@ import { useState } from "react";
 import { DialogFooter } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { useToast } from "./ui/use-toast";
+import { publish } from "@/lib/utils";
 
 interface BookingFormProps {
   onCloseModal(): void;
@@ -66,7 +67,7 @@ export default function BookingForm({ onCloseModal }: BookingFormProps) {
         description: "Reserva feita com sucesso!",
       });
       onCloseModal();
-      new CustomEvent("reload-calendar");
+      publish("reload-calendar");
     }
   }
 
@@ -84,9 +85,8 @@ export default function BookingForm({ onCloseModal }: BookingFormProps) {
               <SelectValue placeholder="Select" />
             </SelectTrigger>
             <SelectContent position="popper">
-              <SelectItem value="auditorio-1">Auditório 1</SelectItem>
-              <SelectItem value="auditorio-2">Auditório 2</SelectItem>
-              <SelectItem value="auditorio-3">Auditório 3</SelectItem>
+              <SelectItem value="auditorio-1">Espaço Irmã Rosa</SelectItem>
+              <SelectItem value="auditorio-2">Espaço Irmã Filomena</SelectItem>
             </SelectContent>
           </Select>
         </div>

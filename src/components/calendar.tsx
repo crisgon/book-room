@@ -55,9 +55,8 @@ export function BookingCalendar() {
   }
 
   const resourceMap = [
-    { resourceId: "auditorio-1", resourceTitle: "Auditório 1" },
-    { resourceId: "auditorio-2", resourceTitle: "Auditório 2" },
-    { resourceId: "auditorio-3", resourceTitle: "Auditório 3" },
+    { resourceId: "auditorio-1", resourceTitle: "Espaço Irmã Rosa" },
+    { resourceId: "auditorio-2", resourceTitle: "Espaço Irmã Filomena" },
   ];
 
   var defaultMessages = {
