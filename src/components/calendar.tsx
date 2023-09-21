@@ -18,7 +18,7 @@ export function BookingCalendar() {
   const { defaultDate, views } = useMemo(
     () => ({
       defaultDate: new Date(),
-      views: ["day"],
+      views: ["day"] as any,
     }),
     []
   );
