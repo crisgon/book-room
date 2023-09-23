@@ -103,3 +103,7 @@
   text-align: left !important;
   padding-left: 3rem !important;
 }
+.rbc-day-slot .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  @apply bg-blue-500;
+}
